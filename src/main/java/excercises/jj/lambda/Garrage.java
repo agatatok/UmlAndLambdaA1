@@ -3,6 +3,7 @@ package excercises.jj.lambda;
 import excercises.jj.uml.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Predicate;
@@ -46,4 +47,6 @@ public class Garrage {
     static Predicate<Vehicle> getOnlyCars = v -> v instanceof Car;
     static Predicate<Vehicle> getOnlyTruckAndRaceCars = v -> v instanceof RaceCar || v instanceof Truck;
     static Predicate<Vehicle> getOnlyNonLandTransport = v -> v instanceof Plane || v instanceof Ship;
+
+    static Comparator<Vehicle> getTheClassesAscending = Comparator.comparing(v -> v.getClass().getName());
 }

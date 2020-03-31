@@ -8,24 +8,20 @@ import static excercises.jj.lambda.ForCopy.*;
 
 public class Kopiuj {
 
-    public static void main(String[] args) {
-        String path = "";
-        try {
-             path = new File(".").getCanonicalPath();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        File source = new File(path + "/src/main/java/excercises/jj/lambda/source.txt");
-        File target = new File(path + "/src/main/java/excercises/jj/lambda/target.txt");
-
+    public static void runTestCopy() {
+        System.out.println("---------------------TEST KOPIOWANIA-------------------");
         double fileUtils = 0.0;
         double NIO = 0.0;
         double IOS = 0.0;
 
         try {
-           fileUtils =  testCopyMethodTime(copyByFileUtils, source , target);
-           NIO = testCopyMethodTime(copyByNIO, source , target);
-           IOS = testCopyMethodTime(copyByIOS, source , target);
+            String path = new File(".").getCanonicalPath();
+            File source = new File(path + "/src/main/java/excercises/jj/lambda/source.txt");
+            File target = new File(path + "/src/main/java/excercises/jj/lambda/target.txt");
+
+            fileUtils =  testCopyMethodTime(copyByFileUtils, source , target);
+            NIO = testCopyMethodTime(copyByNIO, source , target);
+            IOS = testCopyMethodTime(copyByIOS, source , target);
         } catch (IOException e) {
             e.printStackTrace();
         }

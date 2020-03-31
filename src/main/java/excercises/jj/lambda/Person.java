@@ -1,11 +1,13 @@
 package excercises.jj.lambda;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.Comparator;
 import java.util.function.Predicate;
 
 @Data
+@AllArgsConstructor
 public class Person {
     private String name;
     private String lastName;
