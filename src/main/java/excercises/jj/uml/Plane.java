@@ -1,6 +1,11 @@
 package excercises.jj.uml;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Plane extends Vehicle implements Flying {
+
+
     public void takeOff() {
 
     }

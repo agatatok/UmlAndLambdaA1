@@ -1,5 +1,8 @@
 package excercises.jj.uml;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class RaceCar extends Car {
 
     @Override

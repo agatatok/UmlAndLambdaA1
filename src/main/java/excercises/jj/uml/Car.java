@@ -1,6 +1,11 @@
 package excercises.jj.uml;
 
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Car extends Vehicle {
+
 
     @Override
     public double getFuelNeeds(){

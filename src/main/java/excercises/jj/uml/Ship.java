@@ -1,5 +1,9 @@
 package excercises.jj.uml;
 
+import lombok.AllArgsConstructor;
+
+
+@AllArgsConstructor
 public class Ship extends Vehicle implements Sailling {
     public void dock() {
 
