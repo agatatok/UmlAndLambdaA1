@@ -21,6 +21,7 @@ public class Kopiuj {
         double fileUtils = 0.0;
         double NIO = 0.0;
         double IOS = 0.0;
+
         try {
            fileUtils =  testCopyMethodTime(copyByFileUtils, source , target);
            NIO = testCopyMethodTime(copyByNIO, source , target);
